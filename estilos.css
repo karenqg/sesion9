@@ -1,0 +1,22 @@
+h1,h2{
+    font-family: serif;
+}
+
+h1{
+    
+    color: #377ba8;
+    background-color: lightblue;
+}
+
+
+
+.main{
+    font-family: sans-serif;
+}
+
+button{
+    text-align: center;  
+    min-width: 200px; 
+}
+
+
