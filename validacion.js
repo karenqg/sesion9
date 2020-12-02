@@ -1,5 +1,3 @@
-intentos= 3;
-
 function validarFormulario(){
 
     var user = document.formulario.username;
@@ -7,6 +5,7 @@ function validarFormulario(){
     var passwd = document.formulario.password;
 
     var userLen = user.value.length;
+
     if (userLen == 0 || userLen < 8) {
         alert("Debe ingresar un usuario con mínimo 8 caracteres");
     } else {
@@ -27,5 +26,16 @@ function validarFormulario(){
         alert("Debes ingresar un correo válido!");
     }else{
         console.log("Paso prueba del correo");
-    }
+    }   
+}
+
+
+function showPassword(){
+    var elemento = document.getElementById('password');
+    elemento.type = "text";
+}
+
+function hidePassword(){
+    var elemento = document.getElementById('password');
+    elemento.type = "password";
 }
